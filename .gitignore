@@ -6,4 +6,6 @@
 /*.rbxl.lock
 
 # VSCode settings
-.vscode
+.vscode/
+.vscode/*
+./.vscode/
