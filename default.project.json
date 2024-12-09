@@ -2,19 +2,43 @@
   "name": "endor-temple",
   "tree": {
     "$className": "DataModel",
-
+    "Lighting": {
+      "$properties": {
+        "GlobalShadows": true,
+        "Brightness": 2.0,
+        "Technology": "Future",
+        "Outlines": false,
+        "Ambient": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
     "ReplicatedStorage": {
       "Shared": {
+        "Packages": {
+          "$path": "Packages"
+        },
+		"ServerPackages": {
+          "$path": "ServerPackages"
+        },
         "$path": "src/shared"
       }
     },
-
     "ServerScriptService": {
       "Server": {
         "$path": "src/server"
       }
     },
-
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    },
+    "StarterGui": {
+      "$path": "src/gui"
+    },
     "StarterPlayer": {
       "StarterPlayerScripts": {
         "Client": {
@@ -22,54 +46,31 @@
         }
       }
     },
-
-    "StarterGui": {
-      "$path": "src/gui"
-    },
-
     "Workspace": {
-      "$properties": {
-        "FilteringEnabled": true
-      },
       "Baseplate": {
         "$className": "Part",
         "$properties": {
-          "Anchored": true,
           "Color": [
             0.38823,
             0.37254,
             0.38823
           ],
+          "Anchored": true,
           "Locked": true,
           "Position": [
-            0,
-            -10,
-            0
+            0.0,
+            -10.0,
+            0.0
           ],
           "Size": [
-            512,
-            20,
-            512
+            512.0,
+            20.0,
+            512.0
           ]
         }
-      }
-    },
-    "Lighting": {
+      },
       "$properties": {
-        "Ambient": [
-          0,
-          0,
-          0
-        ],
-        "Brightness": 2,
-        "GlobalShadows": true,
-        "Outlines": false,
-        "Technology": "Voxel"
-      }
-    },
-    "SoundService": {
-      "$properties": {
-        "RespectFilteringEnabled": true
+        "FilteringEnabled": true
       }
     }
   }

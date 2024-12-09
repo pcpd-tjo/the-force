@@ -1,5 +1,6 @@
 # Project place file
-/endor-temple.rbxlx
+endor-temple.rbxl
+endor-temple.rbxlx
 
 # Roblox Studio lock files
 /*.rbxlx.lock
@@ -9,3 +10,9 @@
 .vscode/
 .vscode/*
 ./.vscode/
+
+Packages
+ServerPackages
+
+roblox.yml
+wally.lock

@@ -1,0 +1,3 @@
+return {
+    DATABASE_NAME = "TJO_DATABASE"
+}
