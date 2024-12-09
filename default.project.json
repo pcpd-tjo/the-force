@@ -24,7 +24,8 @@
           "$path": "ServerPackages"
         },
         "$path": "src/shared"
-      }
+      },
+      "$path": "src/replicatedstorage"
     },
     "ServerScriptService": {
       "Server": {
