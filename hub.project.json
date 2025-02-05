@@ -1,0 +1,140 @@
+{
+    "name": "hub",
+    "tree": {
+        "$className": "DataModel",
+        "Chat": {
+            "$className": "Chat",
+            "$properties": {
+                "BubbleChatEnabled": false,
+                "LoadDefaultChat": false
+            }
+        },
+        "HttpService": {
+            "$className": "HttpService",
+            "$properties": {
+                "HttpEnabled": true
+            }
+        },
+        "Lighting": {
+            "$path": "maps/hub/Lighting.rbxm"
+        },
+        "MaterialService": {
+            "$path": "maps/hub/MaterialService.rbxm",
+            "$properties": {
+                "Use2022MaterialsXml": {
+                    "Bool": true
+                }
+            }
+        },
+        "Players": {
+            "$className": "Players",
+            "$properties": {
+                "CharacterAutoLoads": false
+            }
+        },
+        "ReplicatedFirst": {
+            "$className": "ReplicatedFirst",
+            "$path": "src/hub/ReplicatedFirst"
+        },
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "Client": {
+                "$className": "Folder",
+                "Components": {
+                    "$path": "src/game/client/Components/ExperienceWide"
+                },
+                "Controllers": {
+                    "$path": "src/hub/client/Controllers",
+                    "ClientState": {
+                        "$path": "src/game/client/Controllers/ClientState.lua"
+                    }
+                },
+                "Modules": {
+                    "$path": "src/game/client/Modules"
+                }
+            },
+            "Gui": {
+                "$className": "Folder",
+                "$path": "src/hub/gui",
+                "Components": {
+                    "$path": "src/game/gui/Components"
+                },
+                "Hooks": {
+                    "$path": "src/game/gui/Hooks"
+                },
+                "KnitContext": {
+                    "$path": "src/game/gui/KnitContext"
+                },
+                "Theme": {
+                    "$path": "src/game/gui/Theme"
+                }
+            },
+            "Packages": {
+                "$path": "Packages"
+            },
+            "Shared": {
+                "$className": "Folder",
+                "$path": "src/game/shared",
+                "TKGShared": {
+                    "$path": "submodules/tkg-shared/shared"
+                }
+            },
+            "assets": {
+                "$path": "assets"
+            }
+        },
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "Server": {
+                "$path": "src/bootstrap/Server.server.luau",
+                "Components": {
+                    "$path": "src/game/server/Components"
+                },
+                "Modules": {
+                    "$path": "src/game/server/Modules"
+                },
+                "Services": {
+                    "$path": "src/game/server/Services"
+                }
+            },
+            "ServerPackages": {
+                "$path": "ServerPackages"
+            }
+        },
+        "ServerStorage": {
+            "$className": "ServerStorage"
+        },
+        "SoundService": {
+            "$className": "SoundService",
+            "$properties": {
+                "RespectFilteringEnabled": true
+            }
+        },
+        "StarterPlayer": {
+            "$className": "StarterPlayer",
+            "StarterPlayerScripts": {
+                "$className": "StarterPlayerScripts",
+                "Client": {
+                    "$path": "src/bootstrap/Client.client.luau"
+                }
+            }
+        },
+        "TextChatService": {
+            "$className": "TextChatService",
+            "$properties": {
+                "ChatVersion": "LegacyChatService"
+            },
+            "ChatWindowConfiguration": {
+                "$className": "ChatWindowConfiguration",
+                "$properties": {
+                    "Enabled": false
+                }
+            }
+        },
+        "Workspace": {
+            "$className": "Workspace",
+            "$ignoreUnknownInstances": true,
+            "$path": "maps/hub/Workspace"
+        }
+    }
+}

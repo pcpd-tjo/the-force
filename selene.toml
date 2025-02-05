@@ -1,1 +1,2 @@
-std = "roblox"
+std = "lua53+roblox+remodel+testez"
+exclude = ["src/game/server/Adonis/*", "*.spec.lua"]

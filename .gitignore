@@ -1,18 +1,19 @@
 # Project place file
-endor-temple.rbxl
-endor-temple.rbxlx
+/the-force.rbxlx
 
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock
 
-# VSCode settings
-.vscode/
-.vscode/*
-./.vscode/
-
-Packages
-ServerPackages
-
+Packages/
+ServerPackages/
+DevPackages/
+*.rbxl*
+.env
+.env.luau
 roblox.yml
-wally.lock
+build/
+sourcemap.json
+.VSCodeCounter
+**/*.diff
+.obsidian

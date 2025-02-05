@@ -1,78 +1,132 @@
 {
-  "name": "endor-temple",
-  "tree": {
-    "$className": "DataModel",
-    "Lighting": {
-      "$properties": {
-        "GlobalShadows": true,
-        "Brightness": 2.0,
-        "Technology": "Future",
-        "Outlines": false,
-        "Ambient": [
-          0.0,
-          0.0,
-          0.0
-        ]
-      }
-    },
-    "ReplicatedStorage": {
-      "Shared": {
-        "Packages": {
-          "$path": "Packages"
+    "name": "The Force Hub",
+    "tree": {
+        "$className": "DataModel",
+        "HttpService": {
+            "$className": "HttpService",
+            "$properties": {
+                "HttpEnabled": true
+            }
         },
-		"ServerPackages": {
-          "$path": "ServerPackages"
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "ServerPackages": {
+                "$path": "ServerPackages"
+            },
+            "Server": {
+                "$path": "src/boot/Server.server.luau",
+                "Components": {
+                    "$path": "src/game/server/Components"
+                },
+                "Services": {
+                    "$path": "src/game/server/Services"
+                },
+                "Modules": {
+                    "$path": "src/game/server/Modules",
+                    "Adonis": {
+                        "$className": "Folder",
+                        "$path": "src/game/server/Adonis"
+                    }
+                }
+            }
         },
-        "$path": "src/shared"
-      },
-      "$path": "src/replicatedstorage"
-    },
-    "ServerScriptService": {
-      "Server": {
-        "$path": "src/server"
-      }
-    },
-    "SoundService": {
-      "$properties": {
-        "RespectFilteringEnabled": true
-      }
-    },
-    "StarterGui": {
-      "$path": "src/gui"
-    },
-    "StarterPlayer": {
-      "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/client"
+        "ServerStorage": {
+            "$className": "ServerStorage"
+        },
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "Client": {
+                "$className": "Folder",
+                "$path": "src/game/client"
+            },
+            "Gui": {
+                "$className": "Folder",
+                "$path": "src/game/gui"
+            },
+            "Shared": {
+                "$className": "Folder",
+                "$path": "src/game/shared"
+            },
+            "Packages": {
+                "$path": "Packages"
+            },
+            "assets": {
+                "$path": "assets"
+            }
+        },
+        "StarterPlayer": {
+            "$className": "StarterPlayer",
+            "$properties": {
+                "CameraMaxZoomDistance": 40.0,
+                "CharacterUseJumpPower": true,
+                "CharacterJumpPower": 50.0,
+                "HealthDisplayDistance": 0.0,
+                "NameDisplayDistance": 0.0
+            },
+            "StarterPlayerScripts": {
+                "$className": "StarterPlayerScripts",
+                "Client": {
+                    "$path": "src/boot/Client.client.luau"
+                }
+            },
+            "StarterCharacterScripts": {
+                "$className": "StarterCharacterScripts",
+                "$path": "src/game/LegacyCharacterScripts"
+            }
+        },
+        "Players": {
+            "$className": "Players",
+            "$properties": {
+                "CharacterAutoLoads": false
+            }
+        },
+        "Chat": {
+            "$className": "Chat",
+            "$properties": {
+                "LoadDefaultChat": true,
+                "BubbleChatEnabled": true
+            }
+        },
+        "TextChatService": {
+            "$className": "TextChatService",
+            "$properties": {
+                "ChatVersion": "TextChatService"
+            },
+            "ChatWindowConfiguration": {
+                "$className": "ChatWindowConfiguration",
+                "$properties": {
+                    "Enabled": false
+                }
+            },
+            "BubbleChatConfiguration": {
+                "$className": "BubbleChatConfiguration",
+                "$properties": {
+                    "BackgroundColor3": {
+                        "Color3": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TextColor3": {
+                        "Color3": [
+                            1,
+                            1,
+                            1
+                        ]
+                    }
+                }
+            }
+        },
+        "ReplicatedFirst": {
+            "$className": "ReplicatedFirst",
+            "$path": "src/game/ReplicatedFirst"
+        },
+        "SoundService": {
+            "$className": "SoundService",
+            "$properties": {
+                "RespectFilteringEnabled": true
+            }
         }
-      }
-    },
-    "Workspace": {
-      "Baseplate": {
-        "$className": "Part",
-        "$properties": {
-          "Color": [
-            0.38823,
-            0.37254,
-            0.38823
-          ],
-          "Anchored": true,
-          "Locked": true,
-          "Position": [
-            0.0,
-            -10.0,
-            0.0
-          ],
-          "Size": [
-            512.0,
-            20.0,
-            512.0
-          ]
-        }
-      },
-      "$properties": {
-        "FilteringEnabled": true
-      }
     }
-  }
 }

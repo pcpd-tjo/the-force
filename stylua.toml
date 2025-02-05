@@ -1,0 +1,10 @@
+column_width = 120
+line_endings = "Unix"               # Unix, Windows - Unix because we need to run stylua on GH Action runners and they use Unix
+indent_type = "Tabs"                # Tabs, Spaces
+indent_width = 4
+quote_style = "AutoPreferDouble"    # AutoPreferDouble, AutoPreferSingle, ForceDouble, ForceSingle
+call_parentheses = "Always"         # Always, NoSingleString, NoSingleTable, None, Input
+collapse_simple_statement = "Never" # Never, FunctionOnly, ConditionalOnly, Always
+
+[sort_requires]
+enabled = false

@@ -1,5 +1,5 @@
 [package]
-name = "charlie/endor-temple"
+name = "charlie/the-force"
 version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
@@ -8,15 +8,15 @@ realm = "shared"
 shared-packages = "game.ReplicatedStorage.Packages"
 
 [dependencies]
-TableUtil = "sleitnick/table-util@^1"
-Comm = "sleitnick/comm@1.0.1"	
-Loader = "sleitnick/loader@2.0.0"	
+Comm = "sleitnick/comm@1.0.1"
+
+Signal = "sleitnick/signal@2.0.3"
+
 Knit = "sleitnick/knit@^1.7"
-Component = "sleitnick/component@2.4.8"
-Promise = "evaera/promise@4.0.0"
-Cmdr = "evaera/cmdr@1.12.0"
 Llama = "shanebutt/llama@1.1.4"
-ProfileService = "nidoxs/profileservice@1.0.0"
+Promise = "evaera/promise@=4.0.0"
 
 [server-dependencies]
+ProfileService = "nidoxs/profileservice@1.0.0"
 ProfileStore = "lm-loleris/profilestore@1.0.2"
+Cmdr = "evaera/cmdr@=1.12.0"
